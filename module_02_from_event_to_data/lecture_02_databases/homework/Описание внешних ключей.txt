@@ -1,2 +1,20 @@
 сущность products:
-- FK category_id -> 
+- FK category_id -> categories.category_id
+
+сущность sales:
+- FK employee_id -> employees.employee_id
+- FK customer_id -> customers.customer_id
+- FK product_id -> products.product_id
+
+сущность employees:
+- FK city_id -> cities.city_id 
+- FK shop_id -> shops.shop_id 
+
+сущность customers:
+- FK city_id -> cities.city_id 
+
+сущность cities:
+- FK country_id -> countries.country_id
+
+сущность shops:
+- FK city_id -> cities.city_id 

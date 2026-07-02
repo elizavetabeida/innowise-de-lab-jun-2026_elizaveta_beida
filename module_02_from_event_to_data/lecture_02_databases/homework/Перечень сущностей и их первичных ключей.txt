@@ -1,0 +1,21 @@
+сущность categories: PK category_id
+
+сущность products: PK product_id
+
+сущность sales: PK sales_id
+
+сущность employees: PK employee_id
+
+сущность customers: PK customer_id
+
+сущность countries: PK country_id
+
+сущность cities: PK city_id
+
+сущность shops: PK shop_id
+
+Обоснование: вышеперечисленные поля были выбраны в качетсве первичного ключа, поскольку они уникальны для каждой записи и позволяют однозначно идентифицировать записи в таблице.
+
+
+
+
