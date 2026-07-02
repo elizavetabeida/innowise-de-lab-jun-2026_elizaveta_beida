@@ -1,0 +1,2 @@
+сущность products:
+- FK category_id -> 
