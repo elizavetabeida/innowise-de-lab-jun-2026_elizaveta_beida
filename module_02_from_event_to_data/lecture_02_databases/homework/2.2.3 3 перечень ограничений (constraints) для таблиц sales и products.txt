@@ -1,0 +1,36 @@
+
+sales NOT NULL:
+- sales_id 
+- customer_id 
+- product_id
+- quantity 
+- total_price 
+- sales_timestamp
+- transaction_number
+
+products NOT NULL:
+- product_id
+- product_name
+- price
+- category_id
+- vitality_days
+
+все вышеперчисленные поля должны быть NOT NULL, так как без них запись о продаже/товаре не имеет смысла.
+
+sales UNIQUE:
+- sale_id
+
+products UNIQUE:
+- product_id
+
+предложения sales CHECK:
+- quantity > 0
+- total_price > 0
+- 0 <= discount < 1
+
+предложения products CHECK:
+- price > 0
+- vitality_days > 0
+- поля resistant и is_allergic могут принимать только два значения: yes, no
+
+
